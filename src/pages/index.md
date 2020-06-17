@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Карта мира (заголовок 1)
+title: Карта мира (заголовок )
 image: /img/home-jumbotron.jpg
 heading: Карта мира (заголовок 3)
-subheading: Карта мира (подзаголовок)
+subheading: Карта мира (подзаголовок)3123213213213213
 mainpitch:
   title: Карта мира (заголовок 2)
   description: >
