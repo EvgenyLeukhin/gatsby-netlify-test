@@ -38,9 +38,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
 
           # top block
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
+          - {label: Top Block - Image, name: topBlockimage, widget: image}
+          - {label: Top Block - Subheading, name: topBlocksubheading, widget: string}
+          - {label: Top Block - Title, name: topBlocktitle, widget: string}
 
           # promo block
 

@@ -6,15 +6,20 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
+    const { 
+      // top
+      topBlockimage, 
+      topBlocksubheading, 
+      topBlocktitle,
+
+      // promo
+    } = data;
+
     return (
       <IndexPageTemplate
-        image={getAsset(data.image)}
-        title={data.title}
-        heading={data.heading}
-        subheading={data.subheading}
-        description={data.description}
-        intro={data.intro || { blurbs: [] }}
-        mainpitch={data.mainpitch || {}}
+        topBlockimage={getAsset(topBlockimage)}
+        topBlocksubheading={topBlocksubheading}
+        topBlocktitle={topBlocktitle} 
       />
     )
   } else {
