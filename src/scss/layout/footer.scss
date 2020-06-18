@@ -1,0 +1,10 @@
+&__footer {
+  display: flex;
+  justify-content: space-between;
+
+  .social {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+  }
+}

@@ -8,7 +8,7 @@ import vimeo from '../img/social/vimeo.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="kartina-mira__footer">
         <span>&copy; 2020 Картина мира</span>
 
         <b>Картина мира</b>

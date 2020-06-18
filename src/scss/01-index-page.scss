@@ -1,0 +1,50 @@
+&__index {
+  .top-block {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+
+    &__titles {
+        display: flex;
+        height: 150px;
+        line-height: 1;
+        justify-content: space-around;
+        flex-direction: column;
+        text-transform: uppercase;
+        
+
+      h3 {
+        line-height: 1;
+        padding: 0.25em;
+      }
+
+      h1 {
+        line-height: 1;
+        padding: 0.25em;
+      }
+    }
+
+
+    &__details {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      right: 0;
+      margin-left: -75px;
+      bottom: 0;
+      display: block;
+      width: 150px;
+      color: #fff;
+      text-transform: uppercase;
+
+      &:hover {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+  

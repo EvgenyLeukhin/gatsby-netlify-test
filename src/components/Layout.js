@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
   return (
-    <div className="kartina-mira-container">
+    <div className="kartina-mira">
       <Helmet>
         <html lang="ru" />
         <title>{title}</title>
