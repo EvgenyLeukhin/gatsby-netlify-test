@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: Карта мира (заголовок )
-image: /img/home-jumbotron.jpg
-heading: Карта мира (заголовок 3)
-subheading: Карта мира (подзаголовок)3123213213213213
+title: Карта мира (заголовок)
+image: /img/kartina-mira-_-за-тремя-планами.00_06_52_10-1.png
+heading: Карта мира (заголовок 3)jhjkjk
+subheading: Карта мира (подзаголовок)3123213213213213kj
 mainpitch:
-  title: Карта мира (заголовок 2)
+  title: Карта мира (заголовок 2)kjkj
   description: >
     Карта мира (описание 1) Карта мира (описание 1)
 
@@ -42,12 +42,14 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: Карта мира (заголовок 3)
-  description: >
+  heading: Карта мира (заголовок 3
+  description: >-
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+
+    dsdsdsdsdsdsds
 main:
   heading: Great coffee with no compromises
   description: >
