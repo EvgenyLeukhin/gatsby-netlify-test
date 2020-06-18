@@ -34,36 +34,34 @@ class Navbar extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <b>Картина мира</b>
-            </Link>
 
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
+        <div
+          className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+          data-target="navMenu"
+          onClick={() => this.toggleHamburger()}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+
+        <div className="navbar-brand">
+          <Link to="/" className="navbar-item" title="Logo">
+            Картина мира
+          </Link>
+        </div>
+
+        <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
+          <div className="navbar-start">
+            <Link className="navbar-item" to="/videos">Наши картины</Link>
+            <Link className="navbar-item" to="/contacts">Контакты</Link>
+            <Link className="navbar-item" to="/about">О нас</Link>
           </div>
 
-          <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/videos">Наши картины</Link>
-              <Link className="navbar-item" to="/contacts">Контакты</Link>
-              <Link className="navbar-item" to="/about">О нас</Link>
-            </div>
-
-            <div className="navbar-end has-text-centered">
-              <a href="mailto:info@kartinamira.com" className="navbar-item">info@kartinamira.com</a>
-              <a href="tel:+73833195908" className="navbar-item">+7(383)319-59-08</a>
-              <a href="tel:+74992557677" className="navbar-item">+7(499)255-76-77</a>
-            </div>
+          <div className="navbar-end">
+            <a href="mailto:info@kartinamira.com" className="navbar-item">info@kartinamira.com</a>
+            <a href="tel:+73833195908" className="navbar-item">+7(383)319-59-08</a>
+            <a href="tel:+74992557677" className="navbar-item">+7(499)255-76-77</a>
           </div>
         </div>
       </nav>

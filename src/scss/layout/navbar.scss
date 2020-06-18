@@ -1,10 +1,44 @@
 & > &__navbar {
   background-color: transparent;
   position: absolute;
-  width: 100%;
+  max-width: 1655px;
+  margin: auto;
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar-brand {
+    position: absolute;
+    margin-left: -137px;
+    left: 50%;
+    top: 35px;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 23px;
+    letter-spacing: 7px;
+  }
+
+  .navbar-menu {
+    .navbar-start {
+      margin-top: 55px;
+      flex-direction: column;
+      text-transform: uppercase;
+
+      a {
+        padding: 0.1rem 0.55rem;
+      }
+    }
+
+    .navbar-end {
+      margin-top: -15px;
+
+      a.navbar-item {
+        font-size: 19px;
+      }
+    }
+  }
 
 
   .navbar-menu.is-active {
@@ -15,7 +49,7 @@
     background-color: rgba(0,0,0, 0.5);
   }
   
-  .container a {
+  a {
     color: #fff;
 
     &:hover {
