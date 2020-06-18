@@ -39,10 +39,13 @@ collections:
 
           # top block
           - {label: Top Block - Image, name: topBlockimage, widget: image}
-          - {label: Top Block - Subheading, name: topBlocksubheading, widget: string}
+          - {label: Top Block - Preheading, name: topBlockPreHeading, widget: string}
           - {label: Top Block - Title, name: topBlocktitle, widget: string}
 
           # promo block
+          - {label: Promo Block - Preheading, name: promoBlockPreHeading, widget: string}
+          - {label: Promo Block - Title, name: promoBlocktitle, widget: string}
+          - {label: Promo Block - Description, name: promoBlockDescription, widget: string}
 
           # services block
 

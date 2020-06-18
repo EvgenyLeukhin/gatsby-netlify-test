@@ -8,18 +8,23 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     const { 
       // top
-      topBlockimage, 
-      topBlocksubheading, 
-      topBlocktitle,
+      topBlockimage, topBlockPreHeading, topBlocktitle,
 
       // promo
+      promoBlockPreHeading, promoBlocktitle, promoBlockDescription,
     } = data;
 
     return (
       <IndexPageTemplate
+        // top-block
         topBlockimage={getAsset(topBlockimage)}
-        topBlocksubheading={topBlocksubheading}
+        topBlockPreHeading={topBlockPreHeading}
         topBlocktitle={topBlocktitle} 
+
+        // promo-block
+        promoBlockPreHeading={promoBlockPreHeading}
+        promoBlocktitle={promoBlocktitle}
+        promoBlockDescription={promoBlockDescription}
       />
     )
   } else {

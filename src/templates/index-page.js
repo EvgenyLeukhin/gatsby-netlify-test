@@ -7,7 +7,10 @@ import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
   // top
-  topBlockimage, topBlocksubheading, topBlocktitle,
+  topBlockimage, topBlockPreHeading, topBlocktitle,
+
+  // promo
+  promoBlockPreHeading, promoBlocktitle, promoBlockDescription,
 
 
 }) => (
@@ -22,7 +25,7 @@ export const IndexPageTemplate = ({
     >
       <div className="top-block__titles">
         <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
-          {topBlocksubheading}
+          {topBlockPreHeading}
         </h3>
 
         <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
@@ -34,8 +37,11 @@ export const IndexPageTemplate = ({
     </section>
 
     <section className="promo-block">
-      <h1>Promo block</h1>
-
+      <div className="container">
+        <b>{promoBlockPreHeading}</b>
+        <h2>{promoBlocktitle}</h2>
+        <p>{promoBlockDescription}</p>
+      </div>
     </section>
 
  
@@ -45,7 +51,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   // top
   topBlockimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  topBlocksubheading: PropTypes.string,
+  topBlockPreHeading: PropTypes.string,
   topBlocktitle: PropTypes.string,
 
 }
@@ -54,11 +60,10 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   const { 
     // top
-    topBlockimage, 
-    topBlocksubheading, 
-    topBlocktitle,
+    topBlockimage, topBlockPreHeading, topBlocktitle,
 
     // promo
+    promoBlockPreHeading, promoBlocktitle, promoBlockDescription,
 
   } = frontmatter;
 
@@ -67,10 +72,13 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         // top
         topBlockimage={topBlockimage} 
-        topBlocksubheading={topBlocksubheading} 
+        topBlockPreHeading={topBlockPreHeading} 
         topBlocktitle={topBlocktitle}
 
         // promo
+        promoBlockPreHeading={promoBlockPreHeading}
+        promoBlocktitle={promoBlocktitle}
+        promoBlockDescription={promoBlockDescription}
       />
     </Layout>
   )
@@ -97,8 +105,11 @@ export const pageQuery = graphql`
             }
           }
         }
-        topBlocksubheading
+        topBlockPreHeading
         topBlocktitle
+        promoBlockPreHeading
+        promoBlocktitle
+        promoBlockDescription
       }
     }
   }
