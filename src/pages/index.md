@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Карта мира (заголовок)
+title: Фильмы для бизнеса и не только
+subheading: Мы делаем кино
 image: /img/kartina-mira-_-за-тремя-планами.00_06_52_10-1.png
 heading: Карта мира (заголовок 3)jhjkjk
-subheading: Карта мира (подзаголовок)3123213213213213kj
 mainpitch:
   title: Карта мира (заголовок 2)kjkj
   description: >
