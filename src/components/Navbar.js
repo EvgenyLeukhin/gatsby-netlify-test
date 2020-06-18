@@ -42,7 +42,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              {/* <img src={logo} alt="Kaldi" style={{ width: '88px' }} /> */}
+              <b>Картина мира</b>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,24 +61,27 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
+              <Link className="navbar-item" to="/videos">
+                Наши картины
+              </Link>
+              <Link className="navbar-item" to="/contacts">
+                Контакты
+              </Link>
               <Link className="navbar-item" to="/about">
-                About
+                О нас
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
+              {/* <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
-              </Link>
+              </Link> */}
             </div>
             <div className="navbar-end has-text-centered">
-              <a
+              <a href="mailto:info@kartinamira.com" className="navbar-item">info@kartinamira.com</a>
+              <a href="tel:+73833195908" className="navbar-item">+7(383)319-59-08</a>
+              <a href="tel:+74992557677" className="navbar-item">+7(499)255-76-77</a>
+              {/* <a
                 className="navbar-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
@@ -86,7 +90,7 @@ const Navbar = class extends React.Component {
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
